@@ -1,8 +1,9 @@
 .sources {
     display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    height: 120px;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    width: 97vw;
+    height: 25vh;
     overflow: auto;
     align-items: center;
     font: 300 1em 'Fira Sans', sans-serif;
@@ -31,4 +32,29 @@
 .source__item-name {
     font-weight: 400;
     white-space: nowrap;
+}
+/*SCROLL JULIA*/
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+::-webkit-scrollbar {
+    background-color: black;
+    height: 8px;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #70d6ff; /*barra*/
+    border-radius: 10px;
+}
+.blur {
+    width: 98%;
+    height: 5vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 82%;
+    /* position: sticky;
+    top: 70%; */
+    background-image: linear-gradient(360deg, #17181c 0%, transparent 95%);
+    opacity: 1;
+    z-index: 2;
 }
